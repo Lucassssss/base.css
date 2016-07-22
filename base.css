@@ -1,0 +1,544 @@
+/*!
+base.css Help you write style more easy
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Lucas Wang
+oodoobvideo@gmail.com
+*/
+
+@charset "UTF-8";
+/*!
+START Reset style
+*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+	margin: 0;
+	padding: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th {
+	text-align: left;
+	font-weight: normal;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+	border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+	font-style: normal;
+}
+[hidefocus],
+summary {
+	outline: 0;
+}
+li {
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+	/*font-size:100%;*/
+}
+sup,
+sub {
+	font-size: 83%;
+}
+pre,
+code,
+kbd,
+samp {
+	font-family: inherit;
+}
+q:before,
+q:after {
+	content: none;
+}
+textarea {
+	overflow: auto;
+	resize: none;
+}
+label,
+summary {
+	cursor: default;
+}
+a,
+button {
+	cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+	font-weight: normal;
+}
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+	text-decoration: none;
+}
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+	outline: 0;
+}
+body {
+	background: #fff;
+	color: #666666;
+	outline: 0;
+	font-family: Arial, Helvetica, sans-serif, "microsoft yahei";
+	font-size: 12px;
+}
+a {
+	color: #666666;
+	font-size: 12px;
+	font-family: 'microsoft yahei';
+}
+a:hover {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+	color: #999999;
+	font-family: arial;
+}
+/*!
+END reset style
+*/
+/*!
+START Common style
+
+The prefix begin with ".cc" 
+you can replace that whatever you like
+*/
+
+.cc-clear:after,
+.cc-clearli li:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+	content: " .";
+}
+.cc-clear,
+.cc-clearli li {
+	zoom: 0;
+}
+.cc-dis_in {
+	display: inline !important;
+}
+.cc-dis_ib {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.cc-dis-dn {
+	display: none;
+}
+.cc-dis-db {
+	display: block;
+}
+.cc-fl {
+	float: left !important;
+}
+.cc-fr {
+	float: right !important;
+}
+.cc-pr {
+	position: relative;
+}
+.cc-prz {
+	position: relative;
+	zoom: 1;
+}
+.cc-pa {
+	position: absolute;
+}
+.cc-oh {
+	overflow: hidden;
+}
+.cc-fwn {
+	font-weight: normal !important;
+}
+.cc-fwb {
+	font-weight: bold;
+}
+.cc-tal {
+	text-align: left !important;
+}
+.cc-tac {
+	text-align: center !important;
+}
+.cc-tar {
+	text-align: right !important;
+}
+.cc-taj {
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+.cc-vam,
+.cc-vama * {
+	vertical-align: middle;
+}
+.cc-vat {
+	vertical-align: top;
+}
+.cc-wsn {
+	word-wrap: normal;
+	white-space: nowrap;
+}
+.cc-pre {
+	overflow: hidden;
+	text-align: left;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.cc-wwb {
+	white-space: normal;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.cc-ti {
+	overflow: hidden;
+	text-indent: -30000px;
+}
+.cc-ti2 {
+	text-indent: 2em;
+}
+.cc-lhn {
+	line-height: normal !important;
+}
+.cc-tdu,
+.cc-tdu:hover {
+	text-decoration: underline;
+}
+.cc-tdn,
+.cc-tdn:hover {
+	text-decoration: none;
+}
+.cc-toe {
+	overflow: hidden;
+	word-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.cc-csp {
+	cursor: pointer;
+}
+.cc-csd {
+	cursor: default;
+}
+.cc-csh {
+	cursor: help;
+}
+.cc-csm {
+	cursor: move;
+}
+.cc-usn {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.red {
+	color: red;
+}
+.cc-fs1 {
+	font-size: 12px;
+	font-family: 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
+}
+.cc-fs2 {
+	font-size: 14px !important;
+	font-family: 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
+}
+h4 {
+	font-size: 16px;
+	font-family: 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
+}
+.cc-fs4,
+h3 {
+	font-family: "microsoft yahei";
+}
+h2 {
+	font-size: 20px;
+	font-family: "microsoft yahei";
+}
+.cc-fs3,
+h1 {
+	font-size: 22px;
+	font-family: "microsoft yahei";
+}
+.cc-fs5 {
+	font-size: 30px !important;
+}
+.color1 {
+	color: #ff6600 !important;
+}
+.color2 {
+	color: #29b0ea !important;
+}
+.color3 {
+	color: #609700 !important;
+}
+.color4 {
+	color: #333333 !important;
+}
+.color5 {
+	color: #66cc00 !important;
+}
+.color6 {
+	color: #ff6353 !important;
+}
+.color7 {
+	color: #b8eb41 !important;
+}
+.color8 {
+	color: #e8cc6a !important;
+}
+.color9 {
+	color: #3d57b9 !important;
+}
+.color10 {
+	color: #999999 !important;
+}
+.padding0 {
+	padding: 0 !important;
+}
+.pt0 {
+	padding-top: 0 !important;
+}
+.pt5 {
+	padding-top: 5px !important;
+}
+.pt8 {
+	padding-top: 8px !important;
+}
+.pb15 {
+	padding-bottom: 15px !important;
+}
+.pb30 {
+	padding-bottom: 30px !important;
+}
+.pl0 {
+	padding-left: 0 !important;
+}
+.pl10 {
+	padding-left: 10px !important;
+}
+.pl24 {
+	padding-left: 24px !important;
+}
+.pr0 {
+	padding-right: 0 !important;
+}
+.pr10 {
+	padding-right: 10px !important;
+}
+.mt0 {
+	margin-top: 0 !important;
+}
+.mb0 {
+	margin-bottom: 0 !important;
+}
+.mt9 {
+	margin-top: 9px !important;
+}
+.mt10 {
+	margin-top: 10px !important;
+}
+.mt15 {
+	margin-top: 15px !important;
+}
+.mt5 {
+	margin-top: 5px !important;
+}
+.mt45 {
+	margin-top: 45px !important;
+}
+.mt20 {
+	margin-top: 20px !important;
+}
+.mt30 {
+	margin-top: 30px !important;
+}
+.mt50 {
+	margin-top: 50px !important;
+}
+.mt70 {
+	margin-top: 70px !important;
+}
+.mt25 {
+	margin-top: 25px !important;
+}
+.mr5 {
+	margin-right: 5px !important;
+}
+.mr10 {
+	margin-right: 10px !important;
+}
+.mb5 {
+	margin-bottom: 5px !important;
+}
+.mb10 {
+	margin-bottom: 10px !important;
+}
+.mb15 {
+	margin-bottom: 15px !important;
+}
+.mb20 {
+	margin-bottom: 20px !important;
+}
+.mb30 {
+	margin-bottom: 30px !important;
+}
+.mb40 {
+	margin-bottom: 40px !important;
+}
+.mb80 {
+	margin-bottom: 80px !important;
+}
+.ml0 {
+	margin-left: 0 !important;
+}
+.ml5 {
+	margin-left: 5px !important;
+}
+.ml10 {
+	margin-left: 10px !important;
+}
+.ml15 {
+	margin-left: 15px !important;
+}
+.ml30 {
+	margin-left: 30px !important;
+}
+.ml65 {
+	margin-left: 65px !important;
+}
+.ml75 {
+	margin-left: 75px !important;
+}
+.ml40 {
+	margin-left: 40px !important;
+}
+.mr0 {
+	margin-right: 0 !important;
+}
+.border {
+	border: #eeeeee 1px solid;
+	border-left: 0;
+	border-top: 0;
+}
+.bgno {
+	background: none !important;
+}
+.borderno {
+	border: 0 !important;
+}
+.borderTno {
+	border-top: 0 !important;
+}
+.borderRno {
+	border-right: 0 !important;
+}
+.borderLno {
+	border-left: 0 !important;
+}
+.borderBno {
+	border-bottom: 0 !important;
+}
+.borderB {
+	border-bottom: #eeeeee 1px solid;
+}
+.container_24 {
+	width: 1000px !important;
+	margin: 0 auto;
+}
+input::-moz-placeholder,
+::-webkit-input-placeholder,
+::-ms-input-placeholder {
+	color: #999
+}
+input[type="checkbox"]{
+	vertical-align: middle;
+}
+input[type="radio"]{
+	vertical-align: middle;
+}
+.clear{
+	clear: both;
+}
